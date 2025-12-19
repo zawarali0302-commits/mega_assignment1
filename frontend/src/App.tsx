@@ -28,7 +28,6 @@ function App() {
   useEffect(() => {
     fetchData();
   }, []);
-
 const handleDeleteCustomer = async (customerId: number) => {
     try {
       await api.delete(`/api/customers/${customerId}`);
